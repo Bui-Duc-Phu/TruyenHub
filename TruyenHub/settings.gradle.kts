@@ -10,6 +10,9 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    plugins {
+        id("androidx.compose.compiler") version "1.5.3"
+    }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -21,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "TruyenHub"
 include(":app")
- 
+include(":MyComponent")

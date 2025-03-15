@@ -5,14 +5,15 @@ plugins {
     kotlin("kapt")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+
 }
 
 android {
-    namespace = "com.example.truyenhub"
-    compileSdk = 34
+    namespace = "com.devphu.truyenhub"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.truyenhub"
+        applicationId = "com.devphu.truyenhub"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -53,6 +54,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.lifecycle.livedata.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -65,6 +67,8 @@ dependencies {
     //hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+    implementation( "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+    kapt ("androidx.hilt:hilt-compiler:1.2.0")
 
     //viewmodel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
@@ -84,18 +88,22 @@ dependencies {
     kapt("androidx.room:room-compiler:2.6.1")
 
     // Ui Test
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.8.0-beta01")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.8.0-beta01")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.8.0-beta02")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.8.0-beta02")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //paging3
-    implementation("androidx.paging:paging-compose:3.3.5")
+    implementation("androidx.paging:paging-compose:3.3.6")
 
 
     //navigation
-    val nav_version = "2.8.6"
-    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation("androidx.navigation:navigation-compose:2.8.7")
+
+    implementation(project(":MyComponent"))
+
+    implementation("com.google.accompanist:accompanist-pager:0.32.0")
+
 
 }
