@@ -26,7 +26,8 @@ fun TruyenHubTheme(
 ) {
 
     val colors = if (darkTheme) ColorMainDark else ColorMainLight
-    CompositionLocalProvider(localtionColors provides colors) {
+    val string = VietnameseStrings
+    CompositionLocalProvider(localtionColors provides colors,LocalAppStrings provides string) {
         MaterialTheme(
             typography = Typography,
             content = content

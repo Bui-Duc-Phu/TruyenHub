@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TruyenHub</string>
+    <string name="bottonTitle1">Tủ truyện</string>
+    <string name="bottonTitle2">Thư viện</string>
+    <string name="bottonTitle3">Xếp hạng</string>
+    <string name="bottonTitle4">Tài khoản</string>
 </resources>

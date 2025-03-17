@@ -11,6 +11,8 @@ data class AppStrings(
     val theloai: String,
     val searchHint: String,
     val listLabel: String,
+    val male: String,
+    val feMale: String,
     // Thêm các chuỗi khác nếu cần
 )
 // Tạo CompositionLocal để cung cấp chuỗi
@@ -20,7 +22,8 @@ val LocalAppStrings = staticCompositionLocalOf {
         theloai = "",
         searchHint = "",
         listLabel = "",
-
+        male = "",
+        feMale = "",
     )
 }
 // Bộ chuỗi cho tiếng Việt
@@ -29,6 +32,8 @@ val VietnameseStrings = AppStrings(
     theloai = "Thể Loại",
     searchHint = "Tìm kiếm",
     listLabel = "Danh sách",
+    male = "Nam",
+    feMale = "Nữ",
 )
 
 // Bộ chuỗi cho tiếng Anh
@@ -37,5 +42,7 @@ val EnglishStrings = AppStrings(
     theloai = "Thể Loại",
     searchHint = "Search",
     listLabel = "List",
+    male = "Nam",
+    feMale = "Nữ",
 )
 

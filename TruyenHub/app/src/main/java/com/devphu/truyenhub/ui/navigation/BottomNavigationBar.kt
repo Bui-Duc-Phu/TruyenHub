@@ -27,7 +27,7 @@ fun BottomNavigationBar(navController: NavController) {
                     Icon(
                         painter = painterResource(id = screen.icon),
                         contentDescription = screen.title,
-                        modifier = Modifier.size(24.dp) // Thay đổi kích thước icon
+                        modifier = Modifier.size(20.dp) // Thay đổi kích thước icon
                     )
                 },
                 label = { Text(screen.title) },

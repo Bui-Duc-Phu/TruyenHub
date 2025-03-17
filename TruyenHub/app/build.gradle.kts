@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.lifecycle.livedata.core)
+    implementation(libs.androidx.foundation.layout.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -104,6 +105,11 @@ dependencies {
     implementation(project(":MyComponent"))
 
     implementation("com.google.accompanist:accompanist-pager:0.32.0")
+    implementation("io.coil-kt.coil3:coil-compose:3.1.0")
+    implementation("io.coil-kt:coil-compose:2.2.2")
 
+    implementation("androidx.compose.ui:ui-tooling-preview:1.7.8") // Phiên bản mới nhất
+    debugImplementation("androidx.compose.ui:ui-tooling:1.7.8")
+    implementation("androidx.compose.ui:ui-graphics:1.7.8") //
 
 }

@@ -1,13 +1,13 @@
 package com.devphu.truyenhub.ui.navigation
 
 import AccountScreen
-import CollectionScreen
 import LibraryScreen
 import RankingScreen
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.devphu.truyenhub.ui.screen.Collection.CollectionScreen
 
 @Composable
 fun AppNavGraph(navController: NavHostController) {
